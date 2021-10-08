@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works  on flex</title>
+    <style>
+        /* .flexbox div{
+            
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            text-align: center;
+            margin: 10px;
+            
+            
+        }
+        .flexbox{
+            border: 1px  solid black;
+            width: 500px;
+            /* height: 200px;
+            margin-top: 20px;
+            display: flex;
+            /* flex-direction: row; */
+            /* flex-wrap: wrap-reve; */
+           /* flex-wrap: column wrap;
+           
+        }
+        .flexbox-2{
+            height: 120px !important;
+        } */ 
+        .flex-item{
+            height: 100px;
+            width: 100px;
+            background-color: brown;
+            margin: 5px;
+            list-style: none;
+        }
+        .flexbox-container{
+
+            display: flex;
+  
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap;
+  
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-between;
+  
+  padding: 0;
+  margin: 0;
+  list-style: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flexbox">
+        <div class="flexbox-1">
+            <h1>1</h1>
+        </div>
+        <div class="flexbox-2">
+            <h1>2</h1>
+        </div>
+        <div class="flexbox-3">
+            <h1>3</h1>
+        </div> 
+        <div class="flexbox-3">
+            <h1>4</h1>
+        </div>  
+       
+       
+        </div>
+    </div>
+    <hr>
+    <div >
+        <ul class="flexbox-container">
+            <li class="flex-item">1</li>
+            <li class="flex-item">2</li>
+            <li class="flex-item">3</li>
+            <li class="flex-item">4</li>
+            <li class="flex-item">5</li>
+            <li class="flex-item">6</li>
+        </ul>
+    </div>
+</body>
+</html>
