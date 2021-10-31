@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1Tag" onmouseover="textOver()">Explore Uganda  City.</h1>
+    <button onclick="removeButton()">Click more</button>
+    <script>
+        function textOver() {
+            var h1Tag = document.getElementById('h1Tag');
+            console.log(h1Tag)
+            h1Tag.innerHTML="Thank to exploring";
+            h1Tag.style.backgroundColor='cyan';
+           
+        }
+        function removeButton() {
+            var h1Tag = document.getElementById('h1Tag');
+            h1Tag.remove();
+        }
+    </script>
+</body>
+</html>
