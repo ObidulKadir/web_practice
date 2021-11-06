@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+    <style>
+        body{
+            margin: 10px;
+        }
+        .container{
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 50px 1fr 50px 40px;
+            grid-template-areas: 
+            "h h h h h h h h h h h h"
+            "m m m c c c c c c c a a"
+            "f f f f f f f f f f a a"
+            
+
+        } 
+        .container > div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            color: #fdfdfd;
+        }
+        .header{
+            background-color: rgb(64, 204, 134);
+            /* grid-column: 2 / -1; */
+            grid-area: h;
+        }
+        .menu{
+            background-color: red;
+            grid-area: m;
+            
+        }
+        .content{
+            background-color: rgba(12, 99, 149, 0.938);
+            grid-area: c;
+            
+        }
+        .footer{
+            background-color: rgb(219, 136, 28);
+            grid-area: f;
+            
+        }
+        .aside{
+            background-color: cadetblue;
+            grid-area: a;
+        }
+        /* grid style start */
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">header</div>
+        <div class="menu">Menu</div>
+        <div class="content">content</div>
+        <div class="footer">footer</div>
+        <div class="aside">aside</div>
+    </div>
+
+</body>
+</html>
