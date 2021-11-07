@@ -17,8 +17,8 @@
             position: relative;
             transition-property: width , background-color, border-radius, transform;
             transition-duration: 3s;
-            transition-timing-function: ease-in-out;
-            transition-delay: 0.0001s;
+            transition-timing-function: ease-out;
+            transition-delay: 0s;
             
         }
         .head:hover{
@@ -37,32 +37,17 @@
             font-size: 2rem;
             position: absolute;
             top: 8px;
-            left: 400px;
-            transition: animation 2s;
-            animation-name: example;
-            animation-duration: 3s;
-            animation-delay: 0.000000001s;
-            animation-iteration-count:infinite;
+            left: 423px;
+            transition-property: transform,border-radius ;
+            transition-duration: 3s;
+            transition-delay: 2s;
+           
         }
-        @keyframes example{
-            0%{
-                transform: translate(300px);;
-            }
-            25%{
-                background-color: seagreen;
-               
-            }
-            50%{
-                background-color: sienna;
-                transform: rotateZ(30deg);
-                /* border-start-start-radius: 70px; */
-                border-radius: 70px 70px 0px 0px;
-                left: 500px;
-                width: 450px;
-                
-            }
-            
+        .container:hover .menu{
+            transform: translate(400px,300px);
+            border-radius: 50px 0px 0px 50px;
         }
+        
         
         
        
