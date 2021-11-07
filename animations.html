@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .head{
+            height: 300px;
+            width: 300px;
+            background-color: rgb(121, 48, 48);
+            /* align-self: center; */
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+            position: relative;
+            transition-property: width , background-color, border-radius, transform;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: .2s;
+            
+        }
+        .head:hover{
+            width: 400px;
+            background-color: red;
+            border-radius: 0px 50px 50px 0px;
+            transform: rotate(30deg);
+        }
+        .menu{
+            height: 300px;
+            width: 300px;
+            background-color: rgb(19, 25, 59);
+            /* align-self: center; */
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+            position: absolute;
+            top: 8px;
+            left: 400px;
+            animation-name: example;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            animation-iteration-count: 30;
+        }
+        @keyframes example{
+            25%{
+                background-color: seagreen;
+               
+            }
+            50%{
+                background-color: sienna;
+                transform: rotateZ(30deg);
+                /* border-start-start-radius: 70px; */
+                border-radius: 70px 70px 0px 0px;
+                left: 500px;
+                transition: width 2s;
+                width: 400px;
+
+            }
+            
+        }
+        
+        
+       
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="head">h</div>
+        <div class="menu">
+            m
+        </div>
+
+    </div>
+    <!-- <div class="head"></div> -->
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        div{
+            border: 1px  solid black;
+        }
+        div > .class{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: height 2s, width ease 4s;
+            
+        }
+        .class:hover{
+            height: 400px;
+            width: 500px;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transition</h1>
+    <div>
+        <div class="class">
+            
+        </div>
+    </div>
+
+</body>
+</html>
