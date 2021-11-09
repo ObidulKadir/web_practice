@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json stringify and parse()</title>
+</head>
+<body>
+    <script>
+        const user = {
+            id:1, name:'kadir',
+            info:[
+                {
+                    id: 456,
+                    name:'rizwan',
+                    degination: "engineer",
+                    salary: 20000
+                },
+                {
+                    id:1245,
+                    name: "rahman",
+                    degination:'uganda',
+                    salary:10000
+                }
+            ],
+            friendsName:["kadir","aryan","brik"]
+            
+        }
+        const jsonUser =  JSON.stringify(user);
+        console.log(jsonUser);
+        console.log(typeof(jsonUser))
+        const jsonObj =  JSON.parse(jsonUser);
+        console.log(jsonObj)
+
+    </script>
+</body>
+</html>
